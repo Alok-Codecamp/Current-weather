@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>current wether</title>
+    <!-- bootstrap Css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("images/bg-image.jpg");
+      }
+      h1 {
+        color: white;
+      }
+      .result-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      #weather-details {
+        margin: 0 0 0 42%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="input-group mb-3 mt-5 mx-auto w-50">
+        <input
+          id="search-input"
+          type="text"
+          class="form-control"
+          placeholder="Search your city wether"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          onclick="loadWetherData()"
+          class="btn btn-outline-secondary btn-danger text-light"
+          type="button"
+          id="button-addon2"
+        >
+          Button
+        </button>
+      </div>
+
+      <div id="result" class="result-div">
+        <p class="text-light">Current weather of your city</p>
+      </div>
+      <br /><br />
+      <div class="text-light" id="weather-details"></div>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- <img src="images/wether-condition/Hail.gif" alt=""> -->
