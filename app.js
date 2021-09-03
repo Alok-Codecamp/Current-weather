@@ -3,7 +3,7 @@ const loadWetherData = async () => {
   const inputText = input.value;
   input.value = "";
   if (inputText.length >= 2) {
-    const url = `http://api.weatherstack.com/current?access_key=7697cb9b58cd32191ce52d6b54553d64&query=${inputText}`;
+    const url = `https://api.weatherstack.com/current?access_key=7697cb9b58cd32191ce52d6b54553d64&query=${inputText}`;
     const res = await fetch(url);
     const data = await res.json();
     // console.log(data);
